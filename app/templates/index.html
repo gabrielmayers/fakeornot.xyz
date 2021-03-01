@@ -11,16 +11,16 @@
     <body>
       <header class="menu">
         <div class="menu__section left">
-          <img class="menu__icon" src="assets/burger-icon.svg" alt="Burger" />
+          <img class="menu__icon" src="{{ url_for('static', filename='assets/burger-icon.svg') }}" alt="Burger" />
           <a class="menu__link active">All</a>
           <a class="menu__link">Images</a>
         </div>
 
         <div class="menu__section right">
-          <img class="menu__icon" src="assets/more-icon.svg" />
+          <img class="menu__icon" src="{{ url_for('static', filename='assets/more-icon.svg') }}" />
 
           <div class="menu__profile">
-            <img class="menu__avatar--frame" src="assets/circle-frame.svg" />
+            <img class="menu__avatar--frame" src="{{ url_for('static', filename='assets/circle-frame.svg') }}" />
             <img
               class="menu__avatar"
               src="https://api.adorable.io/avatars/40/rocketseat.png"
@@ -30,7 +30,7 @@
       </header>
 
       <main class="content">
-        <img class="content__logo" src="assets/logo.svg" alt="UI Clone" />
+        <img class="content__logo" src="{{ url_for('static', filename='assets/logo.svg') }}" alt="UI Clone" />
 
         <input class="content__search" type="text" />
 
