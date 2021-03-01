@@ -11,7 +11,8 @@
     <body>
 
       <main class="content">
-        <img class="content__logo" src="{{ url_for('static', filename='assets/logo.svg') }}" alt="UI Clone" />
+        <p class="my-title">FAKEORNOT</p>
+       <!-- <img class="content__logo" src="{{ url_for('static', filename='assets/logo.svg') }}" alt="UI Clone" /> -->
 
         <input class="content__search" type="text" />
         <button class="btn-grad" type="button" onclick="alert('Teste')">Pesquisar</button>
@@ -54,8 +55,13 @@
       color: #fff;
       text-decoration: none;
       }
-         
-         
+
+    .my-title {
+      font-size: 100px;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      color: #0072ff;
+    }
 
   </style>
 </html>
