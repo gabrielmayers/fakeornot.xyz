@@ -9,34 +9,16 @@
   </head>
   <body>
     <body>
-      <header class="menu">
-        <div class="menu__section left">
-          <img class="menu__icon" src="{{ url_for('static', filename='assets/burger-icon.svg') }}" alt="Burger" />
-          <a class="menu__link active">All</a>
-          <a class="menu__link">Images</a>
-        </div>
-
-        <div class="menu__section right">
-          <img class="menu__icon" src="{{ url_for('static', filename='assets/more-icon.svg') }}" />
-
-          <div class="menu__profile">
-            <img class="menu__avatar--frame" src="{{ url_for('static', filename='assets/circle-frame.svg') }}" />
-            <img
-              class="menu__avatar"
-              src="https://api.adorable.io/avatars/40/rocketseat.png"
-            />
-          </div>
-        </div>
-      </header>
 
       <main class="content">
         <img class="content__logo" src="{{ url_for('static', filename='assets/logo.svg') }}" alt="UI Clone" />
 
         <input class="content__search" type="text" />
+        <button class="btn-grad" type="button" onclick="alert('Teste')">Click Me</button>
 
         <div class="content__offer">
           Made with 💜 by
-          <a href="https://youtube.com/rocketseat">Rocketseat</a> for studying
+          <a href="https://github.com/gabrielmayers">Gabriel Mayer</a> for studying
           purposes
         </div>
       </main>
@@ -46,24 +28,33 @@
           <span>Brazil</span>
         </div>
 
-        <div class="footer__section footer__links">
-          <a>Settings</a>
-          <a>Privacy</a>
-          <a>Terms</a>
-        </div>
       </footer>
     </body>
   </body>
+  <style>
+    
+  .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+  
+  .btn-grad {
+    height: 30px;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    }
+
+    .btn-grad:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+      }
+         
+
+  </style>
 </html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
