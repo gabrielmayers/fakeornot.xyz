@@ -1,10 +1,3 @@
-from flask import Flask, render_template
+import streamlit as st
 
-app = Flask(__name__)
-
-@app.route("/teste")
-def test():
-    return render_template('index.html')
-
-if __name__ == "__main__":
-    app.run()
+st.write("Hello Fake or Not!")
