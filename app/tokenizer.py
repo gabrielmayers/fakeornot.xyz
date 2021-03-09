@@ -13,6 +13,8 @@ def lets_token(sentence):
     tokenizer.fit_on_texts(sentence)
     word_index = tokenizer.word_index
 
+    print(word_index)
+
     sequences = tokenizer.texts_to_sequences(sentence) # TOKENIZE
     sequences_padded = pad_sequences(sequences, maxlen=max_length, padding=padding_type) # PAD
 

@@ -10,7 +10,9 @@ user_input = st.text_input("Headline from the News: ")
 
 if st.button("Verify"):
 
-    headline = lets_token(user_input)
+    headline = [user_input]
+
+    headline = lets_token(headline)
 
     pred = model.predict(headline)
 
