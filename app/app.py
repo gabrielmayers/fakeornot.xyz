@@ -16,7 +16,16 @@ if st.button("Verify"):
 
     pred = model.predict(headline)
 
+    result = ""
+
+    if pred > 0.6:
+        result = "True News!"
+    else:
+        result = "Fake News!"
+
     print(pred)
+
+    st.write(result)
 
     st.markdown("""
     <h3 style='text-align: center;'>

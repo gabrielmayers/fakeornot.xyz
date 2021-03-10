@@ -10,12 +10,12 @@ oov_tok = '<OOV>'
 
 def lets_token(sentence):
     tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_tok)
-    tokenizer.fit_on_texts(sentence)
+    tokenizer.fit_on_texts(sentence) # TOKENIZE
     word_index = tokenizer.word_index
 
     print(word_index)
 
-    sequences = tokenizer.texts_to_sequences(sentence) # TOKENIZE
+    sequences = tokenizer.texts_to_sequences(sentence) # Put tokens in sequence order
     sequences_padded = pad_sequences(sequences, maxlen=max_length, padding=padding_type) # PAD
 
     return sequences_padded
