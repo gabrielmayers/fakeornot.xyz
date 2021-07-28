@@ -160,3 +160,13 @@ body {
   font-size: 70px;
   color: red;
 }
+
+.title-about {
+  text-align: center;
+  margin: 50px 50px 75px 100px;
+}
+
+.text-about {
+  text-align: center;
+  margin: 10px 50px 75px 100px;
+}
