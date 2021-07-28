@@ -7,7 +7,7 @@ Detecting Fake News Based on the Headline by LSTM's.
     ### Website
     - [] Finalize UI
     - [] Implement interaction with API (JS)
-    - [] Show the response UI
+    - [] Show the response UIz\
 
     ### API
     - [] Fine Tune BERT
