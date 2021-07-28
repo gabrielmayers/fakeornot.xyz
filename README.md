@@ -4,4 +4,4 @@ Detecting Fake News Based on the Headline by LSTM's.
 
 ## Credits:
 
-For the Google Like search page: ![bendygit](https://github.com/bendygit)
+For the Google Like search page: [bendygit](https://github.com/bendygit)
